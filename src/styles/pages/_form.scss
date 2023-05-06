@@ -1,0 +1,75 @@
+.form {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 750px;
+
+  input[type=file] {
+    display: none;
+  }
+
+  .towByLine{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    label {
+      width: 45%;
+    }
+  }
+
+  .custom-file-upload,
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: $border-radius;
+    border: $border-size solid $foreground-color;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    background-color: $background-color;
+    color: $foreground-color;
+  }
+
+  textarea[name="description"]{
+    height: 10rem;
+    }
+
+  .custom-file-upload,
+  button[type="submit"] {
+    background-color: $background-color;
+    color: $foreground-color;
+    border: $border-size solid $foreground-color;
+    border-radius: $border-radius;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: auto;
+    transition: background-color 0.5s, color 0.8s;
+  }
+
+  .custom-file-upload,{
+    padding: 10px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background-color 0.5s, color 0.8s;
+  }
+
+  .custom-file-upload:hover,
+  button[type="submit"]:hover {
+    background-color: $foreground-color;
+    color: $background-color;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .card-form {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
